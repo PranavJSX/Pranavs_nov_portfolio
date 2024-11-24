@@ -1,7 +1,11 @@
 .navbar>a{
     position:relative;
-    color: rgb(34, 13, 13);
+    color: azure;
     font-size: 2.4vh;
+}
+
+.navbar{
+  background-color: inherit;
 }
 
 .navbar>a::after{
@@ -10,7 +14,7 @@
     height: 2px;
     width: 0px;
     bottom: -5px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(74 222 128);
     left: 0px;
 }
 

@@ -12,7 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F26666;
+  background-color: rgb(55 65 81);
 }
 
 code {
@@ -44,10 +44,3 @@ code {
   font-style: italic;
 }
 
-
-.selected::after{
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: red;
-}
