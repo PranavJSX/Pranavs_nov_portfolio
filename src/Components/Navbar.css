@@ -1,7 +1,7 @@
 .navbar>a{
     position:relative;
-    color: azure;
     font-size: 2.4vh;
+    color: rgb(57, 51, 51);
 }
 
 .navbar{
@@ -14,7 +14,7 @@
     height: 2px;
     width: 0px;
     bottom: -5px;
-    background-color: rgb(192 132 252);
+    background-color: rgb(0, 0, 0);
     left: 0px;
 }
 
@@ -22,6 +22,10 @@
     width: 100%;
     cursor: pointer;
     transition: all 0.27s;
+}
+
+.navbar>a:hover{
+  color: rgb(0, 0, 0);
 }
 
 

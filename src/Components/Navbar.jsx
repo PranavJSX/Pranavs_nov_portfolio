@@ -39,7 +39,7 @@ export const Navbar = () =>{
 
     return(
         <div>
-        <div className="mx-5 navbar justify-self-end flex flex-row space-x-4 sticky top-0 bg-slate-800">
+        <div className="mx-5 navbar justify-self-end flex flex-row space-x-4 sticky top-0 ">
             <a href={'/'} className=" nav_item .pt-sans-regular">Home</a>
             <a href={'/res'} className=" nav_item .pt-sans-regular">Resume</a>
             <a href={'/about'} className=" nav_item .pt-sans-regular">About</a>
