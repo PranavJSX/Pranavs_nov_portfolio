@@ -1,0 +1,52 @@
+.arrow_down{
+    scale: 1;
+    animation: bounce 1.5s linear infinite;
+    position: absolute;
+    left:32%;
+}
+
+.arrow_down>*{
+    color: #c084fc;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+}
+
+
+.progress_bar{
+    transform-origin: 0%;
+}
+
+.hidden_text{
+    max-height: 40px;
+    opacity: 1;
+    transition: ease;
+}
+
+.intro_div{
+    transition: all 2.2s;
+}
+
+.intro_sec_images{
+    height: 40vh;
+    width: 12vw;
+    opacity: 0;
+}
+
+.main_intro_div{
+    color: black;
+}
+
+.image_class{
+    margin-top: -15vh;
+    height: 40vh;
+    width: 30vh;
+    filter: blur();
+}
+

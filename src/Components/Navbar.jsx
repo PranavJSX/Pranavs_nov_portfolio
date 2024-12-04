@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import './Navbar.css';
 import {createBrowserRouter,Route,Link,RouterProvider} from "react-router-dom"
 import { Main_top } from "./Main_top";
-import { Home } from "./Home";
 import { Resume } from "./Resume";
 import { About } from "./About";
 import { Projects} from "./Projects";
+import { Home } from "./Home/Home";
 
 
 const router = createBrowserRouter([{
@@ -39,7 +39,7 @@ export const Navbar = () =>{
 
     return(
         <div>
-        <div className="mx-5 navbar justify-self-end flex flex-row space-x-4 sticky top-0 ">
+        <div className=" navbar flex flex-row justify-end space-x-6 sticky pr-10 pt-5">
             <a href={'/'} className=" nav_item .pt-sans-regular">Home</a>
             <a href={'/res'} className=" nav_item .pt-sans-regular">Resume</a>
             <a href={'/about'} className=" nav_item .pt-sans-regular">About</a>
