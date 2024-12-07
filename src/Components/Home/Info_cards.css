@@ -1,0 +1,10 @@
+.info_cards{
+    background-color: rgb(44 56 61);
+    overflow: hidden;
+}
+
+.info_cards>div{
+    width: 23vw; 
+    /* padding-left: 4.5vw; */
+}
+

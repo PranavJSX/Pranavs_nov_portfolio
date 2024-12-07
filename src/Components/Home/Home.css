@@ -9,12 +9,17 @@
     color: #c084fc;
 }
 
+.arrow_down:hover{
+    cursor: pointer;
+}
+
 @keyframes bounce {
     0%{
-        transform: translateY(0px);
+        /* transform: translateY(0px); */
+        padding-top: 0px;
     }
     25%{
-        transform: translateY(10px);
+        padding-top: 10px;
     }
 }
 
@@ -48,5 +53,10 @@
     height: 40vh;
     width: 30vh;
     filter: blur();
+    border-radius: 15px;
 }
 
+
+.tech_stack_div{
+    transition: all 3s;
+}

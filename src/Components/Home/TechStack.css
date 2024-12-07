@@ -1,0 +1,10 @@
+.icon{
+    color:rgb(221, 220, 220);
+    height: fit-content;
+}
+
+.icon>*:hover{
+    padding-bottom: 3px;
+    scale: 1.7;
+    transition: all 0.5s;
+}
