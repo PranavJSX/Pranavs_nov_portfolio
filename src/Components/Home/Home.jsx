@@ -16,7 +16,7 @@ export const Home = () => {
 
   let {scrollYProgress,scrollY} = useScroll()
   const opacity = useTransform(scrollYProgress,[0.3,0.5],[0,1])
-  const variable_scale = useTransform(scrollY,[300,800],[0.2,1]);
+  const variable_scale = useTransform(scrollY,[300,950],[0.2,1]);
   
   useEffect(()=>{
     isinView ? displayextrastuff() :hideextrastuff() ;
@@ -60,11 +60,12 @@ export const Home = () => {
     </motion.div>
     
     <div className='flex justify-center tech_stack_div mr-[10vw] mt-[-40vh]' style={{opacity:0}}><TechStack/></div>
-    
-    <div ref={ref2} className=' mt-[-300px] pt-[55vh] h-1'></div>
-    
-    <Library/>
 
+    <div ref={ref2} className=' mt-[-300px] pt-[55vh] h-1'></div>
+    <div className='h-1 mt-[10vh] w-screen bg-slate-400' ></div>
+    <div className='mb-[-30vh] mt-[30vh] ml-[21vh] text-slate-500'>*Click on the card to know more</div>
+    <Library/>
+    
     <motion.div className='bg-red-400 sticky bottom-0 h-2 progress_bar' style={{scaleX:scrollYProgress}}></motion.div>
 
 
