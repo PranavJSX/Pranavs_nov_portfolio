@@ -7,6 +7,7 @@ import image2 from '../../Assets/IMG-20240905-WA0001.jpg';
 import { TechStack } from './TechStack';
 import { Info_cards } from './Info_cards';
 import { Library } from './Library';
+import { Footer } from './Footer';
 
 export const Home = () => {
 
@@ -15,7 +16,7 @@ export const Home = () => {
   const isinView = useInView(ref2,{margin:"0px 0px 0px 0px"});
 
   let {scrollYProgress,scrollY} = useScroll()
-  const opacity = useTransform(scrollYProgress,[0.3,0.5],[0,1])
+  const opacity = useTransform(scrollYProgress,[0.2,0.4],[0,1])
   const variable_scale = useTransform(scrollY,[300,950],[0.2,1]);
   
   useEffect(()=>{
@@ -65,7 +66,11 @@ export const Home = () => {
     <div className='h-1 mt-[10vh] w-screen bg-slate-400' ></div>
     <div className='mb-[-30vh] mt-[30vh] ml-[21vh] text-slate-500'>*Click on the card to know more</div>
     <Library/>
-    
+
+    <div>
+      <Footer/>
+    </div>
+
     <motion.div className='bg-red-400 sticky bottom-0 h-2 progress_bar' style={{scaleX:scrollYProgress}}></motion.div>
 
 

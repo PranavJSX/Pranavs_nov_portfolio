@@ -6,14 +6,14 @@ import { Project_cards } from './Project_cards';
 export const Library = () => {
   const arr = [{
     project_heading : 'IMAP (Image storage App)',
-    info:'A complete MERN stack app which allows user to login/signup as per requirement and securely allows them to store their personal images with location with complete map support(user can open google maps and mark the location of the image which is stored in very secure Mongo DB.)',
+    info:'A complete MERN stack app which allows user to login/signup as per requirement and securely allows them to store their personal images with location with complete map support.',
     source_code :'https://github.com/PranavJSX/Mern_app'
 },{
     project_heading : 'Socket IO Room chat app',
-    info:`Using Socket.IO's abilities to track , emit , braodcast user connects and disconnects , I have created an room chat app where a user or a group of users can chat with each other seamlessly understanding all the functions of socketio with detailed login and chat app design elements`,
+    info:`I have created an room chat app where a user or a group of users can chat with each other seamlessly understanding all the functions of socketio with detailed login and chat app design elements`,
     source_code :'https://github.com/PranavJSX/1st_chat_app/tree/master'
 },{
-    project_heading : 'Image GEN AI website',
+    project_heading : 'AI Image generation website',
     info:`An genarative AI website where you can generate images on the basis of the prompts entered , also if you wish you can share that image which will be available to download for all the users`,
     source_code :'https://github.com/PranavJSX/dall_E_Mern'
 }]
@@ -26,7 +26,7 @@ export const Library = () => {
   const x = useTransform(scrollY,[1200,1900],[200,0]);
   // const x = 200;
 
-  const changeopacity = useTransform(scrollYProgress,[0.7,1],[0,1])
+  const changeopacity = useTransform(scrollYProgress,[0.5,0.8],[0,1])
 
  
 
@@ -58,9 +58,12 @@ export const Library = () => {
       </motion.div>
       <div className='col-span-3  rounded-lg card_2_grad flex h-[40vh]'>
         <div className='flex flex-row gap-20 text-center w-[75%]'>{arr.map(Element=>{
-          return <motion.div className='w-[25%] bg-rose-400 rounded-lg pt-5'><Project_cards arr={Element}/></motion.div>
+          return <motion.div className=' flex-col w-[25%] bg-rose-400 rounded-lg pt-3 '><Project_cards arr={Element}/>
+          <a href={`${Element.source_code}`} target='_blank'><button className='rounded-xl bg-rose-400 w-[100%] text-slate-900 hover:bg-rose-500'>Check it Out</button></a>
+          </motion.div>
         })}</div>
-        <div className=' w-[25%] grow-1 flex-auto bg-purple-600 rounded-lg p-10'> Large scale Projects Delivered</div>
+        <div className=' w-[25%] grow-1 flex-auto bg-purple-600 rounded-lg content-center text-center text-4xl pb-10 col-span-2 h-[45vh]'>
+          Large scale <span className='text-green-400'>Projects</span> Delivered</div>
 
       </div>
       {/* <div className='bg-purple-600 rounded-lg text-center content-center card_1_grad'>Projects Delivered</div> */}
