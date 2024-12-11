@@ -10,3 +10,14 @@
     color: rgb(0, 0, 0);
     max-width: fit-content;
 }
+
+.satisfy-regular {
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.social_icons:hover{
+    transition: all 0.2s;
+    padding-left: 5px;
+}
