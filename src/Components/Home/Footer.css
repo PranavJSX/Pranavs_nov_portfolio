@@ -8,16 +8,22 @@
 
 .social_icons{
     color: rgb(0, 0, 0);
-    max-width: fit-content;
 }
 
 .satisfy-regular {
     font-family: "Satisfy", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+.underline_links{
+    color: rgb(150, 30, 30);
+}
+
+
   
-.social_icons:hover{
+.underline_links:hover{
+    padding-left: 2px;
+    color:rgb(22, 22, 22);
     transition: all 0.2s;
-    padding-left: 5px;
 }
