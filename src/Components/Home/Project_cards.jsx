@@ -11,7 +11,7 @@ export const Project_cards = ({arr}) => {
 
     const opacity = useTransform(scrollYProgress,[0.5,0.8],[0,1]);
 
-    const y = useTransform(scrollY,[1500,1900],[400,0])
+    const y = useTransform(scrollY,[1400,1800],[400,0])
 
     useMotionValueEvent(scrollY,'change',(latest)=>{console.log("page scroll : ", latest)});
 
@@ -22,7 +22,7 @@ export const Project_cards = ({arr}) => {
         {arr.project_heading}
         </h2>
         </div>
-        <div className='overflow-hidden max-h-[100%] text-center pt-5'>{arr.info}</div>
+        <div className='overflow-hidden max-h-[100%] text-center pt-5 text-[2.0vh]'>{arr.info}</div>
 
     </motion.div>
   )
