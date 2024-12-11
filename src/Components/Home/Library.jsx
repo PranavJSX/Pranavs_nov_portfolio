@@ -59,7 +59,8 @@ export const Library = () => {
       <div className='col-span-3  rounded-lg card_2_grad flex h-[40vh]'>
         <div className='flex flex-row gap-20 text-center w-[75%]'>{arr.map(Element=>{
           return <motion.div className=' flex-col w-[25%] bg-rose-400 rounded-lg pt-3 '><Project_cards arr={Element}/>
-          <a href={`${Element.source_code}`} target='_blank'><button className='rounded-xl bg-rose-400 w-[100%] text-slate-900 hover:bg-rose-500'>Check it Out</button></a>
+          <a href={`${Element.source_code}`} target='_blank'><button className='rounded-xl border-2 w-[100%] text-slate-200 hover:bg-rose-500 hover:text-slate-800'>
+            Check it Out</button></a>
           </motion.div>
         })}</div>
         <div className=' w-[25%] grow-1 flex-auto bg-purple-600 rounded-lg content-center text-center text-4xl pb-10 col-span-2 h-[45vh]'>
