@@ -40,7 +40,7 @@ export const Home = () => {
 
     <div className = "topmostdiv">
     <div className='flex justify-center text-[8vh] h-screen mt-5'>
-      <div>Hi, <span className='text-[8vh] text-green-400 w-auto'>From Pranav's Portfolio</span></div>  
+      <div className='portText'>Hi, <span className='text-[8vh] text-green-400 w-auto '>From Pranav's Portfolio</span></div>  
       <div className='arrow_down flex  mt-20  ml-[-9vh]' onClick={shiftToIntro}><FaAngleDoubleDown /></div> 
     </div>
     <div className='flex mt-[-70vh] mb-[30vh]'><Info_cards/></div>

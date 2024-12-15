@@ -8,3 +8,12 @@
     /* padding-left: 4.5vw; */
 }
 
+@media (width<=600px) {
+    .info_cards>div{
+        font-size: 15px;
+    }
+    .info_cards{
+        flex-wrap:wrap;
+    }
+}
+

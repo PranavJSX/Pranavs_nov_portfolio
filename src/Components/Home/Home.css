@@ -60,3 +60,15 @@
 .tech_stack_div{
     transition: all 3s;
 }
+
+
+@media (width<=650px) {
+    .portText{
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .portText>span{
+        font-size: 35px;
+    }
+}

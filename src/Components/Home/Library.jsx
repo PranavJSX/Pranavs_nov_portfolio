@@ -22,7 +22,7 @@ export const Library = () => {
 
 
   const {scrollYProgress,scrollY} = useScroll();
-
+   
   const x = useTransform(scrollY,[1200,1900],[200,0]);
   // const x = 200;
 
