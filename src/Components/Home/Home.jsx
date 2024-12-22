@@ -50,14 +50,17 @@ export const Home = () => {
      initial={{scale:0.5}} style={{scale:variable_scale}}>
       {/* {console.log(document.querySelector('.main_intro_div').style.scale)} */}
       <motion.div initial={{opacity:1}} className='flex-start flex-justify-center justify-center pl-[10vw]'>
-        <img className='h-[0vh] w-[1vh] image_class' src={image1} /></motion.div>
+        {/* <img className='h-[0vh] w-[1vh] image_class' src={image1} /> */}
+        </motion.div>
       <motion.div ref={ref1}  className='flex grow justify-self-center pl-5 mt-[10vh] w-[50%] text-[3vh] gap-10 intro_div' 
       initial={{opacity:0}} style={{opacity:opacity}}>
         <p className=' h-auto text-rose-400'>
         <span className='text-gray-200'>UI developer, Front-end developer, design expert</span>, delivering frontend solutions while optimizing apps and websites for performance and faster loading times.
         </p>
       </motion.div>
-      <div className='flex-start flex-justify-center justify-center pr-[10vw] mt-[25vh]'><img  className='image_class h-[0vh] w-[1vh]' src={image2} /></div>
+      <div className='flex-start flex-justify-center justify-center pr-[10vw] mt-[25vh]'>
+        {/* <img  className='image_class h-[0vh] w-[1vh]' src={image2} /> */}
+      </div>
     </motion.div>
     
     <div className='flex justify-center tech_stack_div mr-[10vw] mt-[-40vh]' style={{opacity:0}}><TechStack/></div>
