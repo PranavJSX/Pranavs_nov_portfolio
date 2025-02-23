@@ -13,9 +13,9 @@ export const Footer = () => {
             <div className='ml-[50vh] pt-5 flex-cols'>
                 <div className='pb-2 ml-[-0.4vw] text-2xl text-rose-700 satisfy-regular'>Let's Connect :</div>
                 <div className='social_icons scale-[1.6] content-center flex-row ml-[17vw] flex'>
-                    <div className='pt-[0.7vh]'><a href='www.linkedin.com/in/pranav-ojha-14007a1a9' target='_blank'><FaLinkedin/></a></div>
+                    <div className='pt-[0.7vh]'><a href='https://www.linkedin.com/in/pranav-ojha-14007a1a9/' target='_blank'><FaLinkedin/></a></div>
                     <div className='scale-[0.7] '>
-                        <a href='www.linkedin.com/in/pranav-ojha-14007a1a9' className='underline_links'  target='_blank'>LinkedIN</a>
+                        <a href='https://www.linkedin.com/in/pranav-ojha-14007a1a9/' className='underline_links'  target='_blank'>LinkedIN</a>
                         </div>
                 </div>
                 <div className='social_icons scale-[1.6] content-center mt-5 ml-[17vw]'>
